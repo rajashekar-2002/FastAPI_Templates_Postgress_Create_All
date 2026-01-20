@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async FastAPI CRUD</title>
+</head>
+<body>
+
+<h2>Add Item</h2>
+
+<!-- Sends POST request -->
+<form method="post" action="/add">
+    <input type="text" name="name" required>
+    <button type="submit">Add</button>
+</form>
+
+<h2>Items</h2>
+
+<ul>
+    {% for item in items %}
+        <li>
+            {{ item.name }}
+            <!-- Calls delete endpoint -->
+            <a href="/delete/{{ item.id }}">❌</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

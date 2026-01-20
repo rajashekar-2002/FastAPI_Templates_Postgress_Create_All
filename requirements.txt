@@ -1,0 +1,39 @@
+# ================================
+# FastAPI core framework
+# ================================
+fastapi
+
+# ================================
+# ASGI server to run FastAPI
+# --reload, async support, hot reload
+# ================================
+uvicorn[standard]
+
+# ================================
+# SQLAlchemy ORM (async support included)
+# ================================
+sqlalchemy
+
+# ================================
+# Async PostgreSQL driver
+# REQUIRED when using create_async_engine
+# ================================
+asyncpg
+
+# ================================
+# Template engine for HTML (Jinja2)
+# Used by Jinja2Templates
+# ================================
+jinja2
+
+# ================================
+# Required to read HTML <form> data
+# Needed when using Form(...)
+# ================================
+python-multipart
+
+# ================================
+# Load environment variables from .env file
+# Optional but recommended for DB password
+# ================================
+python-dotenv
